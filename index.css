@@ -28,11 +28,6 @@ nav ul li a {
   text-decoration: none;
   color: #f8c146;
   font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ffffff;
 }
 
 .hero {
@@ -128,14 +123,49 @@ h2 {
 #secao3 h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 6px #000;
+  color: #333;
 }
 
 #secao3 p {
+  color: #333;
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 1px 1px 4px #000;
+}
+
+#secao3 form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#secao3 form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#secao3 form textarea {
+  resize: vertical;
+}
+
+#secao3 form button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#secao3 form button:hover {
+  background-color: #0056b3;
 }
 
 #secao4 {
@@ -161,7 +191,7 @@ h2 {
 }
 
 #secao4 a {
-  color: #f8c146;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
 }

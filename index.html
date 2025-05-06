@@ -15,6 +15,7 @@
         <li><a href="#secao2">Cardápio</a></li>
         <li><a href="#secao3">Sobre Nós</a></li>
         <li><a href="#secao4">Contato</a></li>
+        <li><a href="#sugestão">Sugestão</a></li>
       </ul>
     </nav>
   </header>
@@ -109,9 +110,45 @@
   <section id="secao3">
     <h2>Sobre Nós</h2>
     <p>Na Alessio's, tradição e sabor andam juntos. Nossas pizzas são preparadas com receitas exclusivas e ingredientes frescos selecionados a dedo.</p>
-    <p>Envie sua sugestão de pizza</p>
-    <datalist> tipo de pizza<input type="text" ></datalist>
+    <section id="sugestão">
+      <p>Envie sua sugestão de pizza</p>
+  
+    <form>
+      <label for="tipo">Tipo de pizza:</label>
+      <select id="tipo" name="tipo">
+        <option value="doce">Doce</option>
+        <option value="salgada">Salgada</option>
+      </select>
+      <br><br>
+  
+      <label for="descricao">Descrição da pizza:</label><br>
+      <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Descreva os ingredientes e o sabor..."></textarea>
+      <br><br>
+  
+      <div class="ingredientesObrigatorio">
+      <label for="ingrediente">Ingrediente obrigatório</label>
+      <input type="checkbox" name="ingrediente" id="queijo">
+      <label for="queijo">Queijo</label>
+      <input type="checkbox" name="ingrediente" id="molho">
+      <label for="molho">Molho</label>
+      <input type="checkbox" name="ingrediente" id="oregano">
+      <label for="oregano">oregano</label>
+     
+        <br><br>
+    </div>
+
+      <label for="valor">Valor sugerido (R$):</label>
+      <input type="number" id="valor" name="valor" step="0.01">
+      <br><br>
+  
+      <button type="submit" style="">
+        Enviar
+      </button>
+    </form>
+    </section>
+    
   </section>
+  
 
   <section id="secao4">
     <h2>Contato</h2>
